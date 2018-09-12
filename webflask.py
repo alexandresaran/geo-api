@@ -1,5 +1,5 @@
 import sys
-path = '/home/yourusername/mysite'
+path = '/home/alexandresaran96/geo-api'
 if path not in sys.path:
    sys.path.append(path)
 
@@ -8,7 +8,7 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/main')
 def home():
     data = request.data
     return data
