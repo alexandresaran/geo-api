@@ -2,8 +2,7 @@ import sys
 path = '/home/alexandresaran96/geo-api'
 if path not in sys.path:
    sys.path.append(path)
-
-from flask_app import app as application
+from flask import Flask
 from flask import request
 
 app = Flask(__name__)
